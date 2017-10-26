@@ -1,0 +1,26 @@
+#exampleSMG {
+  background: yellow;
+  border: 2px solid black;
+  position: fixed; /*absolute;i sticky? /* Or match to keyword? */
+          /* design change: yes, match this to the keyword! */ 
+  top: 6px;
+  left: 4px;
+  padding: 4px;
+  z-index: 999;
+}
+#exampleSMG #innerGuide {
+  height: 600px; /* match the external window, at least for now */
+  width: 400px; 
+background: yellow;
+  overflow: scroll;
+  display: none;
+}
+#exampleSMG:hover #innerGuide {
+  z-index: 1000;
+  display: block;  
+}
+#exampleSMG:hover #innerGuide {
+  display: block;
+}
+
+

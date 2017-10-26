@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Social Media Guide",
+  "version": "0.12",
+  "description": "While reading articles, get social media tips based on keywords in what you are reading. Tips from people at the Social Media for Respect and Tolerance facebook group and Cognitive Politics: framing ideas, articles to post, replies to sub-topics, conversation openers for 1:1 dialogue.",
+  "browser_action": {
+    "default_icon": "SMG-first-draft.png",
+    "default_title": "Social Media Guide"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "homepage_url": "https://www.facebook.com/groups/smartly", // maybe
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.2.1.min.js", "content.js","start_guide/pop.js"],
+      "css": ["smg_example.css", "start_guide/examples-pop2.css"]
+    }
+  ]
+}
